@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import BoxModel from "./components/BoxModel";
+import FlexBox from "./components/FlexBox";
 
 export default function App() {
   return (
@@ -8,9 +9,12 @@ export default function App() {
       <Text style={styles.mainText}>Learning Styling in React Native</Text>
       <ScrollView style={styles.scrollContainer}>
           <BoxModel/>
+          <FlexBox/>
       </ScrollView>
       
-      
+      <Text>
+        
+      </Text>
       
     </View>
   );
@@ -33,6 +37,6 @@ const styles = StyleSheet.create({
     
   },
   scrollContainer:{
-    
+    rowGap:20,
   },
 });
